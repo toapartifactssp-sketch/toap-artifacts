@@ -7,9 +7,7 @@ configuration templates for the remaining experiments.
 
 > Scope summary: **CIFAR-10 is the fully reproducible part** of this artifact.
 > The ImageNet-100 and multimodal (BLIP-2 / LLaVA) experiments are provided as
-> implementation code, configuration templates, and (where they already exist)
-> small result tables. They are **not** claimed to be end-to-end reproducible
-> from this artifact. See `docs/ARTIFACT_SCOPE.md`.
+> implementation code, configuration templates.
 
 ## Directory layout
 

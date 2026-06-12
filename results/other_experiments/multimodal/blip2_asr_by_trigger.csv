@@ -1,7 +1,0 @@
-method,trigger_name,trigger_family,asr
-Baseline,simple_s20_x136_y181,simple,0.0
-Baseline,simple_s15_x146_y149,simple,0.0
-Baseline,grad_s15_x178_y52,grad,0.0
-TOAP,simple_s20_x136_y181,simple,0.0
-TOAP,simple_s15_x146_y149,simple,0.0
-TOAP,grad_s15_x178_y52,grad,0.0

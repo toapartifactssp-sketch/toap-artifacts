@@ -1,0 +1,310 @@
+TOAP Artifact - MANIFEST
+============================================================
+Prepared (UTC): 2026-06-12 06:05:34 UTC
+Python (build interpreter): 3.9.23
+Key library versions (from env/requirements-freeze.txt):
+  - gymnasium==1.1.1
+  - matplotlib==3.9.4
+  - networkx==3.2.1
+  - numpy==2.0.2
+  - pandas==2.3.3
+  - persim==0.3.8
+  - ripser==0.6.14
+  - scikit-learn==1.6.1
+  - scipy==1.13.1
+  - torch==2.8.0+cu128
+  - torchvision==0.23.0+cu128
+Total files: 132
+Total size: 3237783 bytes (3.09 MiB)
+
+Directory tree:
+------------------------------------------------------------
+README.md
+checkpoints/
+  cifar10/
+    README.md
+configs/
+  cifar10/
+    README.md
+    cifar10_resnet18.yaml
+    cifar10_rn18_baseline_parity_v3.yaml
+    cifar10_rn18_baseline_parity_v3_nc_moderate.yaml
+    cifar10_rn18_baseline_parity_v3_npd_full_reference.yaml
+    protocol_banks/
+      files_manifest.json
+      master_universe.json
+      protocol_manifest.json
+      search_space_av.json
+      teval.json
+      tholdout.json
+      topt_init.json
+      tprobe.json
+  other_experiments/
+    README.md
+    im100_watermark_baseline.yaml
+    im100_watermark_tadapt.yaml
+    imagenet100_rn50_baseline_parity_v3.yaml
+    imagenet100_rn50_baseline_parity_v3_smoke.yaml
+    imagenet_baseline_audit_manifest.yaml
+docs/
+  ANONYMIZATION.md
+  ARTIFACT_SCOPE.md
+  DATA.md
+  trigger_manifests.md
+env/
+  _err1.txt
+  _err2.txt
+  _err3.txt
+  environment.full.yml
+  environment.yml
+  requirements-freeze.txt
+logs/
+  cifar10/
+    final_metrics_fixed_bank.json
+    summary_backdoored.json
+    summary_clean.json
+results/
+  cifar10/
+    README.md
+    adaptive_bank.jsonl
+    adaptive_candidates.jsonl
+    adaptive_results.csv
+    adaptive_results_table.tex
+    adaptive_summary.json
+    auto_vaccination_final_metrics.json
+    auto_vaccination_paper_results.csv
+    auto_vaccination_rounds.csv
+    baseline_fp_final_fixedbank.csv
+    baseline_nc_moderate_final_fixedbank.csv
+    baseline_none_backdoored_fixedbank.csv
+    combined_adaptive_results.csv
+    combined_adaptive_results_table.tex
+    rl_post_av_paper_results.csv
+    rl_pre_av_paper_results.csv
+  other_experiments/
+    README.md
+    imagenet100/
+      imagenet_baseline_audit_table.csv
+      imagenet_baseline_parity_gap_report.md
+      scope_boundary_tables_deletion_note.tex
+    multimodal/
+      blip2_asr_by_trigger.csv
+      blip2_image_susceptibility.csv
+      blip2_summary.json
+      blip2_trigger_bank.json
+      llava_asr_by_trigger.csv
+      llava_summary.json
+scripts/
+  clean_outputs.sh
+  run_cifar10_full.sh
+  run_cifar10_smoke.sh
+  setup_env.sh
+  verify_cifar10_results.sh
+source/
+  apply_edits_and_eval_cifar10.py
+  auto_vaccination_revised.py
+  baseline_parity_common.py
+  baseline_parity_imagenet100_common.py
+  build_correlation_matrix_cifar10_revised.py
+  cifar_baseline_parity.py
+  compute_persistence_from_corr_cifar10_revised.py
+  compute_tss_cifar10_revised.py
+  data.py
+  defense_fine_prune_cifar10.py
+  defense_neural_cleanse_cifar10.py
+  defense_npd_cifar10.py
+  eval_defense_fixed_bank.py
+  extract_activation_cifar10.py
+  fine_pruning_cifar.py
+  fine_pruning_imagenet100.py
+  generate_defense_table_latex.py
+  imagenet100_baseline_parity.py
+  main.py
+  model.py
+  neural_cleanse_cifar.py
+  neural_cleanse_imagenet100.py
+  npd_cifar.py
+  npd_imagenet100.py
+  protocol_banks.py
+  rl_edge_pruning_cifar10_revised.py
+  train.py
+  tss_delta_asr_validation_cifar10.py
+  utils.py
+  IM100_RN50_FNL/
+    auto_vacc.py
+    banks.py
+    baseline_common.py
+    baseline_run.py
+    build_corr.py
+    compute_ph.py
+    compute_tss.py
+    data.py
+    diag_fc.py
+    eval_tadapt.py
+    extract_act.py
+    main.py
+    model.py
+    rl_patch.py
+    run_all.ps1
+    sanity.py
+    train.py
+    trigger.py
+    configs/
+      baseline.yaml
+      tadapt.yaml
+  imagenet100_resnet50/
+    auto_vaccination_imagenet100_revised.py
+    build_correlation_matrix_imagenet100_revised.py
+    compute_persistence_from_corr_imagenet100_revised.py
+    compute_tss_imagenet100_revised.py
+    data.py
+    diagnostic_fc_ablation.py
+    extract_activation_imagenet100.py
+    main.py
+    model.py
+    protocol_banks.py
+    rl_edge_pruning_imagenet100_revised.py
+    sanity_checks.py
+    train.py
+  scripts/
+    collect_adaptive_final_patch_results.py
+    eval_adaptive_final_patch.py
+    scope_boundary_incident_gate.py
+  tools/
+    _npd_final_eval_once.py
+    generate_imagenet_baseline_gap_report.py
+
+Files (size_bytes  sha256  path):
+------------------------------------------------------------
+      3736  e29854285ebe5304d3f56f5ae5ba3e0086b3f8e65ca6dffc2a15a01ef3f821ee  README.md
+       603  fe1fd423fb330e0a63d2c2f78fef90c589bee4de264ff6bc7692857a9e4d46ec  checkpoints/cifar10/README.md
+      1170  ee74dc798e93472c0075bab1ca8db6184b7653404b9d420215d3e953c6b14b28  configs/cifar10/README.md
+      1234  aefaffa54e357ed46449a8b49de19ff83f46e97107131ff42c8ebcad77efcd08  configs/cifar10/cifar10_resnet18.yaml
+      2681  37a187173198814bf5d07b2dc8a199291597d4c36a312cea7c5e664501367f5b  configs/cifar10/cifar10_rn18_baseline_parity_v3.yaml
+      2545  5592e44639568d3e8fedadf8faac8e60dd6922c360d752d10b2e752ebd7c255b  configs/cifar10/cifar10_rn18_baseline_parity_v3_nc_moderate.yaml
+       687  d53fc1cbbd8b8e2f8207ed4275d8022ef3e232718e4afc580e10e9fb98e2f714  configs/cifar10/cifar10_rn18_baseline_parity_v3_npd_full_reference.yaml
+      1782  48b17394c1ddbabc09cb0823db8911b004da8ca2f8228fa9403aeb4bb9bfe63a  configs/cifar10/protocol_banks/files_manifest.json
+    424303  8267bde8af75aa5f75fa30b07a224cbb96553744dfc3b692fd3d4452b7942fe0  configs/cifar10/protocol_banks/master_universe.json
+      1233  6d035d4cfc6c36d28cafd04ab33f6a51e8d7c05a6283fe43f7b0a1ef49f55414  configs/cifar10/protocol_banks/protocol_manifest.json
+    397838  79c51b0bfa2fa9c581dde1b01ed29323b3d4664e67532860ddaee5924eb0240b  configs/cifar10/protocol_banks/search_space_av.json
+      8273  ec386dd0a37675efc152b0ede3db927239dde5eb6e15531546cb86c58516c39f  configs/cifar10/protocol_banks/teval.json
+      8330  c5f1bf98c16857b60988ea5499b5c1a8f041112c1e3cc5f9e50af96fdc8e050e  configs/cifar10/protocol_banks/tholdout.json
+      8335  775060dd556176e83e0cfd209a075f18667866029451e9def74a06c2c0749cb8  configs/cifar10/protocol_banks/topt_init.json
+      4544  44297e690459772d3c03dfbbe761cefef46a7ace7120d44397ad7d36f7bde31a  configs/cifar10/protocol_banks/tprobe.json
+       826  356faebbe289e29ae891bf1c9cb50b9314eb6b82564826735808c75ca007192f  configs/other_experiments/README.md
+      1985  d1c3d11d9240e0086fa9c6f95d0caac1524c853b8404a70db8da140ea7bcf0ac  configs/other_experiments/im100_watermark_baseline.yaml
+       940  8e4abeae430234d6de2c33c8180ce4b7aabe9ffc77e393ae5713f5713d44499e  configs/other_experiments/im100_watermark_tadapt.yaml
+      2436  f50f0c61bb0959cb3d93f3fa0763a81136af211ae4da5c277ff11ffd0e598edd  configs/other_experiments/imagenet100_rn50_baseline_parity_v3.yaml
+      2086  e43e2c112d1e186f5c588417280358bb4da55baaabc7f1cba213706fc539e619  configs/other_experiments/imagenet100_rn50_baseline_parity_v3_smoke.yaml
+      8196  f0c44ebf93135c128b1485bafb3aeeac200ea8b164d58a4d7026bfc2387b9389  configs/other_experiments/imagenet_baseline_audit_manifest.yaml
+      1748  2f44a6af57ad24d629f3e33636a95a71edc34fafbc35dc47b7d141591dd239e3  docs/ANONYMIZATION.md
+      2273  1cf2ff8acb1abce2223c537c55526846302e206a930eb7602ba0ac15e69ae926  docs/ARTIFACT_SCOPE.md
+      1354  3e6c1276b26239a356e7c179905dc77146a42f8be390b896caf92b8078f60a64  docs/DATA.md
+     29967  6680accf933c2d098976657fc66a648b7eb1e1fe735a2293457a7481385ed18c  docs/trigger_manifests.md
+         0  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  env/_err1.txt
+         0  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  env/_err2.txt
+         0  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  env/_err3.txt
+      1804  4fddd034c3dbd2ba28af765d4567ce53269693e907bcf684ec848f991b9a383c  env/environment.full.yml
+       205  e443fdd851773c30e0441f31fbea0ca95e5c23ccc282618b628f58fe126b68ec  env/environment.yml
+       877  a010415c370bb948bb6339c9d262d2b994dc10702c9e58ab5ab500e3300fd5ec  env/requirements-freeze.txt
+     10039  30eb7a65e88a7480ca05e732806941bc5a0a2c02871151a5e9c99696cfd24a21  logs/cifar10/final_metrics_fixed_bank.json
+       968  00987b0e88e08b686e0de1f0685bb9cb1fd40566a89488a9a32650c3a1b97155  logs/cifar10/summary_backdoored.json
+       944  b0b172c0693a773ce9e0fb985844d8b818d3791b3e3b4f95ae42efb3eb847b16  logs/cifar10/summary_clean.json
+      1023  046cefcf522b10010dcadda2e3fb2f8b9ebed785e56d3cce676a79920956de6c  results/cifar10/README.md
+      7884  dcb34fdc511f3654d4b9b9ced95fe48a4b1aa49b2d286bbc888dd55b9e2c1d3f  results/cifar10/adaptive_bank.jsonl
+    473049  471b85399a5509af0978d419bafaf440ad9f1fbae37c77905535d656c50d8ec1  results/cifar10/adaptive_candidates.jsonl
+       220  43cb7d0d072671e08b5c6afe338e57294cace8ef1631630c1d905755f6a8f963  results/cifar10/adaptive_results.csv
+       318  e019e8e518e33bd639be1ed94faaa4da16ad32fadab19074a6a80dc644f527df  results/cifar10/adaptive_results_table.tex
+      2085  adfa73f6b9c83bcbcda458619fa53edc0b8c6c6f849b85cb719845c21582b406  results/cifar10/adaptive_summary.json
+     20134  9c2dcf74fc1e5fb7bdce9ba81bea000bc308cf5dad3a13be33d50e3d230aa157  results/cifar10/auto_vaccination_final_metrics.json
+      1248  76b8eb46417d447666ac4537d820c809caacd08cda19ff43f20c2bc6ce8c925b  results/cifar10/auto_vaccination_paper_results.csv
+       263  8c190c285553873ae4613a16e5b8d270829dbb06a9a4c8f82ea966a3d3fb6baa  results/cifar10/auto_vaccination_rounds.csv
+      2003  01a2cbdaca6598e95b77c24a7b1cf3b0eb8352120203733f28263aa799c10659  results/cifar10/baseline_fp_final_fixedbank.csv
+      1343  772cf44af66d1780650c451b4a5f6675ccdc2981f1bdbc6b60e57aecd0c1be53  results/cifar10/baseline_nc_moderate_final_fixedbank.csv
+       977  8fbc98f16a65c3ac71cebbf3f84a42b562fe441b2802996e0d2aef461c395c18  results/cifar10/baseline_none_backdoored_fixedbank.csv
+       220  43cb7d0d072671e08b5c6afe338e57294cace8ef1631630c1d905755f6a8f963  results/cifar10/combined_adaptive_results.csv
+       322  9db3ec0cd017a6397985ba54df539e0df0b0aa2145ae6debc58b65b863726506  results/cifar10/combined_adaptive_results_table.tex
+      1025  42ebbdc2479cf907768bae22c354821faeec55ef0f23dc7d942b2bcf94c4550b  results/cifar10/rl_post_av_paper_results.csv
+      2017  2cc9b5ff283a650c46bd225e2f443cf8d7f0cb90e2e4b7b89edbccd6c5470821  results/cifar10/rl_pre_av_paper_results.csv
+       580  976a886f17b3401cc1bfead756f7c068b6ae0f818571e917e7014424c897ad90  results/other_experiments/README.md
+      4006  7418b60bcd6004a8b642561ea575e16598023eb80126f9c4447afa1b9f2aa015  results/other_experiments/imagenet100/imagenet_baseline_audit_table.csv
+     20381  8e1d6edea484969bfb50023a07969d150475ecaa6b2cf5aa167e9bf1c4e1f3e6  results/other_experiments/imagenet100/imagenet_baseline_parity_gap_report.md
+       793  8eebb098dbc00ed27c33862776e0a2e37a394e353b8d885b0ecd831847c6ac27  results/other_experiments/imagenet100/scope_boundary_tables_deletion_note.tex
+       263  b98e2522e472b3d9d0f7dc88bed1883b0b2930a8dc57ea5f205144d01556cca7  results/other_experiments/multimodal/blip2_asr_by_trigger.csv
+     11223  043324967cac371e9bc67a7bed753461f3a30d3aa0c853f0f07648a727bfe03c  results/other_experiments/multimodal/blip2_image_susceptibility.csv
+       277  3fc61890ec0e20f26ff63a3040b03bec0f1e231ce976ca8b7fe4f6cef7360c20  results/other_experiments/multimodal/blip2_summary.json
+       356  626cb84e0ab1a3a72bd120166195ffd5a6a1c9b6ba0a8b56c905d1c68c4d6cc2  results/other_experiments/multimodal/blip2_trigger_bank.json
+       928  9938d90c3fab09afa367ee831a4aa1c6c99a897bafae06a7cb8d79e2e17be936  results/other_experiments/multimodal/llava_asr_by_trigger.csv
+       298  669d09e05b0214a4fddfdb87f7d97955abf195dd7038ec608b6f7ccdb741031d  results/other_experiments/multimodal/llava_summary.json
+       633  7b11f960e09b398b516fdc2770fcefff5b198e5e73c75cb6dfb2a2a0cef168a6  scripts/clean_outputs.sh
+      2759  8e44ddd5dbd912d9a29a83244013d57c81938bfcff9b2952a4fcbd3aa2ebf32d  scripts/run_cifar10_full.sh
+      1031  86f81b7151ec5f0a6ae95f3714271e2d4cd9f70ad85a3da27f78872a83101642  scripts/run_cifar10_smoke.sh
+      1033  decdb07c2ac28653b9405f0ade229c507cb35ba2ecc447177a41aa94ad06f8c0  scripts/setup_env.sh
+      2074  305f4ffd9b59a66c112461842f459ffecd930526a8be9e76e795ae42ddaec93a  scripts/verify_cifar10_results.sh
+     15688  08b395a9ce6a24c3f9ad9fe31a63b39dbb3a9dc3b598d8b70fe14e3017dfed27  source/apply_edits_and_eval_cifar10.py
+     68714  9bd50248e4909b231c97e8184edcbd605a30c288d8daf616ee5d8849cf1e3281  source/auto_vaccination_revised.py
+     12660  b40accf7d1852c1e38d27632b2846807c035d5772744d470ae64f14b583ea268  source/baseline_parity_common.py
+     10904  03259fe6316f88b3f08ee1da72a22050c506c06e1d9556ef07a016e1375bf5dc  source/baseline_parity_imagenet100_common.py
+     31859  94df119c9269efd392ab9504141c9f5dddf0d539abd54ac06d67d6233c32d122  source/build_correlation_matrix_cifar10_revised.py
+      9124  edb7051ad5578d4e2a7f8642ef7fa85cd731ce1ec5d65b748863c14f1faba716  source/cifar_baseline_parity.py
+     30408  826bd8e23e9a55bf4f3f49b2d6c82698159aedac6a087678479196b15c6b7349  source/compute_persistence_from_corr_cifar10_revised.py
+     60125  ac9b17849ed2a41455cb5c125da71c4b05529d9b667333ddc8ea4f382427beac  source/compute_tss_cifar10_revised.py
+     14890  701743b58394469995e41b88d36dc322e0734290e00203a19431a8ec4ab73b29  source/data.py
+     13087  7a32d150f18e5a171bae291bd6db486a42ab36d71045d5d74f24894f17ef2bef  source/defense_fine_prune_cifar10.py
+     13053  2d381af7f14f4d86d7cf3c5f8bd4cd9dff45319b716cc46394088510415bd205  source/defense_neural_cleanse_cifar10.py
+     11545  548058acfd1fa47308db6f28519a6e05a3b3c03fc623674d236ba2a0a8ea9760  source/defense_npd_cifar10.py
+     18633  7246b489ab4d25c506f6841c20c86ccd4a69158275f071e1e554df8835699cc0  source/eval_defense_fixed_bank.py
+     44395  cb96f041ec24dff26d8d2706d02fb076ad59ba1e6369065f7374cc7cc1cdf0c5  source/extract_activation_cifar10.py
+      7721  53ac3885df8d8155cc173d2d7723de74ea02dcd3ed8411707e293c2765543185  source/fine_pruning_cifar.py
+      7166  16e938f732a0831045f443067ba423af3508065fc094a41ad0b178580705f611  source/fine_pruning_imagenet100.py
+      2788  2f1098fbd8a2ac1b1f8f7b36b8310b5767ad5042bdb6d8aed09e6351ba934dd9  source/generate_defense_table_latex.py
+      7516  cf62458b110df295e3e1dccbbbcc81b60095bf57fc31b002410374d795bd0489  source/imagenet100_baseline_parity.py
+     23288  4dbf9b9b295d13019c35f016090121ea6d1964aeda9974ed9f9c4c3e1fd896f3  source/main.py
+      1334  fe767c8b32ac03ddb20351be31c7bdd86fb8a08c68401cab4e97242f8c970178  source/model.py
+      8011  ff17e3a5d14b2cf842e10b88713685e48dbcb4ee9ebffe7ed8154d3b8ba8306d  source/neural_cleanse_cifar.py
+      8267  66e93ea93bc0a2355034e54f6b42eff626e6f3f72a4a43b1d3d14f9a0944a4a4  source/neural_cleanse_imagenet100.py
+      9308  647331f483419d3b15f268fbc797eb74b1c1b850accdc969c14d1fb7cf1e1c0e  source/npd_cifar.py
+      9128  2e87f80da596d30e36b4c06afd20978df286a7ebb2c28e7f57ad12c60c21a8ee  source/npd_imagenet100.py
+     26731  69c3e6b99e21a7648218f047c10a880dc53cb53a5d681ae32c7597c32103be48  source/protocol_banks.py
+    104721  6713959c3648370c5416ed043d7e4fa241a67e15c42603b6b52a01b5b365dec0  source/rl_edge_pruning_cifar10_revised.py
+     24357  1f463bce60a7242fa62daf4df62b79db4233898c321f307e6e2833a4a86fb5c7  source/train.py
+     17651  c6fab9aa11be1b339301ea7460e86cb22ecaffc8d07d328d9ebb3d89f023f125  source/tss_delta_asr_validation_cifar10.py
+      1398  1e74488069eb5a57ff54153e9cd67581aa13cbead3ef85c55dac467fd9acf7fd  source/utils.py
+     69208  a5c8dd53ab12661304443bbbec4574439f0ee3ec262d1739f0f00b329c3683c2  source/IM100_RN50_FNL/auto_vacc.py
+     20195  f5574e91269d19d4fce80e6e8e5e4df6d4ede272104d7ca8b9b3d8e16f591734  source/IM100_RN50_FNL/banks.py
+      5109  f87323723031888fff3a5d7f789585e0ed142992b3c87aaaa0bcb1b365d10b7c  source/IM100_RN50_FNL/baseline_common.py
+       723  0a88cf0a913d776f97b5ce4c48941aa9406d25733e13de0e8d010d9ab12ea35d  source/IM100_RN50_FNL/baseline_run.py
+     33462  b2367b94dc7cfb1f4f10060961e685c1c5df2658f197e1da0605e15d313fdd40  source/IM100_RN50_FNL/build_corr.py
+     30416  cc86de1a743aa657dd00fd997b97aff3f556658057b03a8f8a6aa55e1993b2fe  source/IM100_RN50_FNL/compute_ph.py
+     69710  09fb93f39a313c10ba5982473e38ddd409fd73fd79b35cdc8fcd47d981f4f853  source/IM100_RN50_FNL/compute_tss.py
+     24735  278f3a053c2fdb4fc47c9d463f237a0ead0786f0b35803ccf5c9c487f9a88b8d  source/IM100_RN50_FNL/data.py
+     12674  3d5ffa6dab5e7a96c59b0b7fdb1f311da5207dff6d5e3ad397605d29464efd56  source/IM100_RN50_FNL/diag_fc.py
+     18862  b54324c860374f3391a64e21ae0fdd165ccdeacdea29416494a155b8eb53c80d  source/IM100_RN50_FNL/eval_tadapt.py
+     44854  11c7dbad0f4b8ad38fe151b2a273249799cc51ad34adbe22eb5dd9c1eabeeac2  source/IM100_RN50_FNL/extract_act.py
+     38918  f43c6005c169b9aa5032236a92706afc16273554ef158baf5d5b6ea2765c1634  source/IM100_RN50_FNL/main.py
+       954  036a8c3fd3d6c3e174b92993dff86226a5ced7df677326e9c71577e3f8001684  source/IM100_RN50_FNL/model.py
+    121242  cf4d9aab1d50cbdb1593b4e1bd27083821cce132c2f2c8f4535af2d61c33d226  source/IM100_RN50_FNL/rl_patch.py
+      6444  a8daabb56b5a40ee9ec9caba57113ceeae9c71f6dbe05f02ad93f65965acf2ce  source/IM100_RN50_FNL/run_all.ps1
+      7624  29a96b67f571e2bda6d681b4d4cf871b0eb153718a24f96816bdd98b31574d61  source/IM100_RN50_FNL/sanity.py
+     38118  58e74e78c3321c394b44d0c83b6c5d9cd3ce3634d004557a622df0b45751e7e8  source/IM100_RN50_FNL/train.py
+      9215  069565e9c9a2358ac1c0947932e8cd00893e37324e09cc6f26bec63eeef124dc  source/IM100_RN50_FNL/trigger.py
+      1985  d1c3d11d9240e0086fa9c6f95d0caac1524c853b8404a70db8da140ea7bcf0ac  source/IM100_RN50_FNL/configs/baseline.yaml
+       940  8e4abeae430234d6de2c33c8180ce4b7aabe9ffc77e393ae5713f5713d44499e  source/IM100_RN50_FNL/configs/tadapt.yaml
+     68973  906ae1038bb827a8d10d29076193362a6d6a1901c874d2492a241515facffa6d  source/imagenet100_resnet50/auto_vaccination_imagenet100_revised.py
+     33462  b2367b94dc7cfb1f4f10060961e685c1c5df2658f197e1da0605e15d313fdd40  source/imagenet100_resnet50/build_correlation_matrix_imagenet100_revised.py
+     30416  cc86de1a743aa657dd00fd997b97aff3f556658057b03a8f8a6aa55e1993b2fe  source/imagenet100_resnet50/compute_persistence_from_corr_imagenet100_revised.py
+     69710  09fb93f39a313c10ba5982473e38ddd409fd73fd79b35cdc8fcd47d981f4f853  source/imagenet100_resnet50/compute_tss_imagenet100_revised.py
+     23319  b9504b154c0098e408535ba4b5566c8caf890f6724b14f94c940f58b671dd9a2  source/imagenet100_resnet50/data.py
+     12674  e13cf60ab4b65d410308973193f6c40ee61ee548c1b64aef92f2ed0de2f18f53  source/imagenet100_resnet50/diagnostic_fc_ablation.py
+     44854  11c7dbad0f4b8ad38fe151b2a273249799cc51ad34adbe22eb5dd9c1eabeeac2  source/imagenet100_resnet50/extract_activation_imagenet100.py
+     38562  b67b219938c388a53191bd11d351968eea57fa954ef6b983291f1473c7402d5b  source/imagenet100_resnet50/main.py
+       954  036a8c3fd3d6c3e174b92993dff86226a5ced7df677326e9c71577e3f8001684  source/imagenet100_resnet50/model.py
+     27294  951e648ca464a4d1f1cf31404697bebc45024b1132889502753d26deb6583164  source/imagenet100_resnet50/protocol_banks.py
+    121481  1b60d95f7908b6585d2d6d08308a8ab87c1fb4c19d9cce5185d37ab1eeec14eb  source/imagenet100_resnet50/rl_edge_pruning_imagenet100_revised.py
+      7624  29a96b67f571e2bda6d681b4d4cf871b0eb153718a24f96816bdd98b31574d61  source/imagenet100_resnet50/sanity_checks.py
+     38118  58e74e78c3321c394b44d0c83b6c5d9cd3ce3634d004557a622df0b45751e7e8  source/imagenet100_resnet50/train.py
+      2893  b3f56b0c7aef9918070f1ea6befa2a282a7c0bdc9f4959788ba6c1e4e2e4a8f6  source/scripts/collect_adaptive_final_patch_results.py
+     26937  7b290df76f5a4b011b33b650c924627685e578d749b7de18c65472e11ff0bb3b  source/scripts/eval_adaptive_final_patch.py
+     13899  12c9e57092f02e39133a97ef121ee7466703c75629afda3b88558c05043a65e9  source/scripts/scope_boundary_incident_gate.py
+      3243  c34039fcd3efab474c2c4f4eb5263e24282f90dce25a919e792ea20ae319b2b6  source/tools/_npd_final_eval_once.py
+      8804  216259bf7b5fb3673ba92c34232ec3409553c87b7fb807d799d51d41ddadf0d4  source/tools/generate_imagenet_baseline_gap_report.py

@@ -1,0 +1,90 @@
+benchmark: cifar10_rn18
+seed: 1
+target_label: 0
+asr_denominator: non_target
+
+data_root: ./data
+backdoored_checkpoint: ./experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29/models/backdoored.pth
+clean_checkpoint: null
+toap_pre_av_checkpoint: null
+toap_post_av_checkpoint: null
+locked_toap_results_csv: null
+
+bank_root: ./experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_protocol/banks_cifar10_badnets
+tprobe_path: ./experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_protocol/banks_cifar10_badnets/tprobe.json
+teval_path: ./experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_protocol/banks_cifar10_badnets/teval.json
+tholdout_path: ./experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_protocol/banks_cifar10_badnets/tholdout.json
+
+expected_bank_sizes:
+  tprobe: 8
+  teval: 16
+  tholdout: 16
+
+clean_eval_split: test
+clean_train_or_constraint_split: train
+clean_eval_size: 10000
+probe_n: 512
+batch_size_eval: 256
+num_workers: 0
+output_root: outputs/cifar10_rn18/baselines
+
+fp:
+  prune_scope: ["last_block", "layer4", "layer3_layer4"]
+  prune_ratio: [0.05, 0.10, 0.15, 0.20, 0.30, 0.40]
+  fine_tune_epochs: [3, 5, 10]
+  lr: [0.0001, 0.0003, 0.001]
+  optimizer: AdamW
+  weight_decay: [0.0, 0.0001]
+  batch_size: 128
+  scheduler: cosine
+
+nc:
+  candidate_targets: [0]
+  image_size: 32
+  channels: 3
+  inversion_steps: [1000, 2000, 4000]
+  inversion_lr: [0.1, 0.3, 0.8]
+  mask_reg: [0.0001, 0.001, 0.01]
+  inversion_batch_size: 128
+  restarts_per_config: 3
+  restart_seeds: [1, 2, 3]
+  mitigation_epochs: [3, 5, 10]
+  mitigation_lr: [0.0001, 0.0003, 0.001]
+  mitigation_weight_decay: [0.0, 0.0001]
+  mitigation_batch_size: 128
+  optimizer: AdamW
+
+# NPD: moderate grid (~128 configs vs 3888 full). Full grid documented in
+# configs/baselines/cifar10_rn18_baseline_parity_v3_npd_full_reference.yaml
+npd:
+  insert_layers: ["layer4", "layer3_layer4"]
+  train_scope: ["polarizer_only", "last_stage_unfreeze"]
+  epochs: [5, 10]
+  lr: [0.00005, 0.0001]
+  optimizer: AdamW
+  weight_decay: [0.0, 0.0001]
+  lambda_pol: [0.8, 1.0]
+  lambda_sup: [0.5, 1.0]
+  lambda_distill: [0.0]
+  tau: 4.0
+  margin: [0.5, 1.0]
+  batch_size: 128
+
+locked_rows:
+  none:
+    clean_acc_pct: 91.28
+    w_asr_teval_pct: 99.46666667
+    w_asr_tholdout_pct: 99.67777778
+    w_asr_incident_pct: 95.54444444
+  toap_pre_av:
+    clean_acc_pct: 90.53
+    w_asr_teval_pct: 11.65555556
+    w_asr_tholdout_pct: 8.733333333
+    w_asr_incident_pct: 0.777777778
+    n_edits_total: 8
+  toap_post_av:
+    clean_acc_pct: 90.24
+    w_asr_teval_pct: 1.222222222
+    w_asr_tholdout_pct: 1.666666667
+    w_asr_incident_pct: 0.288888889
+    n_edits_total: 9

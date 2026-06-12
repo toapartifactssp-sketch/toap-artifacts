@@ -1,0 +1,16 @@
+% Advisor scope-boundary table resolution.
+%
+% Delete the old appendix tables rather than submit unsupported values:
+% - Table 16 / tab:clean_model_sanity
+% - Table 21 / specificity under mismatched incident evidence
+%
+% Rationale:
+% The workspace contains headline/backdoored fixed-bank metrics and post-AV
+% metrics, but it does not contain the locked clean-model checkpoint/manifests
+% or decoy-evidence run outputs required by the advisor comment. In particular,
+% the available CIFAR-10/ResNet-18 clean run has run_specificity_check=false,
+% and no checkpoint-like files (*.pth, *.pt, *.ckpt, *.safetensors) were found
+% locally for re-evaluation.
+%
+% Remove the corresponding \begin{table}...\end{table} blocks from the
+% appendix source. Do not replace them with headline-table values.

@@ -1,0 +1,18 @@
+# Reference only: original full NPD grid (3888 configs) from paper-grade parity spec.
+# Not loaded by default. To run full NPD, copy the `npd:` block below into your active config
+# or merge this file's npd section into cifar10_rn18_baseline_parity_v3.yaml.
+
+npd_full_grid:
+  insert_layers: ["layer4", "layer3_layer4"]
+  train_scope: ["polarizer_only", "last_stage_unfreeze"]
+  epochs: [5, 10, 15]
+  lr: [0.00001, 0.00005, 0.0001]
+  optimizer: AdamW
+  weight_decay: [0.0, 0.0001]
+  lambda_pol: [0.5, 0.8, 1.0]
+  lambda_sup: [0.1, 0.5, 1.0]
+  lambda_distill: [0.0, 0.1, 0.5]
+  tau: 4.0
+  margin: [0.5, 1.0]
+  batch_size: 128
+# Total combinations: 2 * 2 * 3 * 3 * 2 * 3 * 3 * 3 * 2 = 3888

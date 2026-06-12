@@ -1,0 +1,33 @@
+benchmark: cifar10_resnet18
+dataset: CIFAR-10
+model: ResNet-18
+
+data_root: data
+checkpoint_path: experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29/models/backdoored.pth
+final_patch_path: experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29/rl_patching_revised/post_av_rerun_anti08/post_av/seed_1/post_av_gates_final.json
+expanded_bank_json: experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29/auto_vaccination_revised_rerun_anti08/expanded_bank.json
+protocol_banks_dir: experiment_output/paper_fixedbank_v3/cifar10_rn18_badnets_protocol/banks_cifar10_badnets
+output_dir: results/adaptive_final_patch/cifar10_resnet18
+
+target_label: 0
+trigger_size: 3
+trigger_color: [1.0, 1.0, 1.0]
+incident_pos: [29, 29]
+
+seed: 1
+batch_size: 128
+num_workers: 0
+small_conv: true
+strict_load: true
+final_patch_label: TOAP post-AV
+
+adaptive_search:
+  mode: exhaustive_location_if_feasible
+  fallback_mode: fixed_budget_location_search
+  split: train
+  num_clean_samples: 512
+  non_target_only: true
+  seed: 1001
+  adaptive_rounds: 3
+  num_restarts_per_round: 5
+  num_inversion_steps: 500

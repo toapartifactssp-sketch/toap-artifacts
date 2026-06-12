@@ -1,0 +1,164 @@
+audit:
+  benchmark: ImageNet-100 / ResNet-50
+  requested_methods: [FP, NC, NPD]
+  status: INCOMPLETE
+  conclusion: "MISSING baseline run artifacts for FP, NC, and NPD; parity cannot be proven from this workspace without ImageNet baseline configs/results."
+  constraints_observed: "No training was rerun; paper text and existing result files were not modified."
+  generated_outputs:
+    manifest: results/imagenet_baseline_audit_manifest.yaml
+    table: results/imagenet_baseline_audit_table.csv
+
+available_common_protocol_evidence:
+  protocol_manifest: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/protocol_manifest.json
+  files_manifest: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/files_manifest.json
+  bank_paths:
+    tprobe: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/tprobe.json
+    teval: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/teval.json
+    tholdout: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/tholdout.json
+    topt_init: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/topt_init.json
+    search_space_av: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/search_space_av.json
+  bank_file_sha256:
+    tprobe: d611d736ebe541ccc7ca2a8d37af6438c1a273e3dbde352a95e3069a8e7914ec
+    teval: 21ec65ad5df84dd12ff86d78ce91556f74a46b6458860559a7d385cd8226270f
+    tholdout: 34efe769781763fade7a48af97d7f9d1047fe0f24ba619e82be375c2da697630
+    protocol_manifest: 1579e367dcceba46388f983f6c051fa0d17ddc80b5951d5c7265d7147b4db35c
+  bank_registry_hashes:
+    tprobe: fdfc55b495bd89fd54a31decbc858e7022c64de6b7e3e6380e6023457533e7f2
+    teval: 049bc4798875b73d47d3dcf36cc3c5e55583edf13eddfadbf42cbebd6bfcfc0d
+    tholdout: 93cfcac66f7d53f5f0e988d051216ea13166c1edc9eee3573a90a2152eb52f3c
+  protocol_details:
+    dataset: ImageNet-100
+    model_family: ResNet-50
+    attack_family: BadNets
+    target_label: 0
+    asr_denominator: non_target
+    trigger_family: imagenet100_badnets_square_patch
+    trigger_size: 5
+    trigger_color: [1.0, 1.0, 1.0]
+    image_size: [224, 224]
+    incident_trigger_pos: [219, 219]
+    bank_seed: 1337
+    tprobe_size: 8
+    teval_size: 16
+    tholdout_size: 16
+    tholdout_min_center_distance: 6.0
+    clean_reporting_set_size: 5000
+    non_target_asr_eval_set_size_per_variant: 4950
+    clean_repair_constraint_set_size: MISSING
+  non_leakage_rule_from_protocol: "No trigger from Teval or Tholdout may be used in optimization, RL reward, tuning, early stopping, or auto-vaccination. Tprobe is probe-only. Headline metrics must be reported on fixed Teval and fixed Tholdout."
+
+available_non_baseline_imagenet_results:
+  backdoored_fixed_bank_metrics:
+    path: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_seed1_pr0p1_t0_sz5_c1p0_1p0_1p0_inc219_219_asr_stable/logs/final_metrics_fixed_bank.json
+    clean_acc_pct: 88.68
+    incident_asr_pct_non_target: 99.47474747474747
+    w_asr_tprobe_pct_diag_only: 0.24242424242424243
+    w_asr_teval_pct: 0.2828282828282828
+    w_asr_tholdout_pct: 0.26262626262626265
+    seed: 1
+    selected_checkpoint_path: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_seed1_pr0p1_t0_sz5_c1p0_1p0_1p0_inc219_219_asr_stable/models/backdoored_final.pth
+  toap_pre_av_metrics:
+    path: experiment_output/in100_rl_preav/pre_av/seed_0/paper_row.json
+    clean_acc_pct_final: 89.07781556311262
+    w_asr_opt_pct_final: 0.18185492018589614
+    w_asr_teval_pct_final: 0.2020610224287735
+    w_asr_tholdout_pct_final: 0.2020610224287735
+    optimization_bank_name: tprobe
+    seed: 0
+
+searched_for_imagenet_baseline_artifacts:
+  expected_artifact_patterns:
+    - configs/baselines/*imagenet*.yaml
+    - configs/baselines/*in100*.yaml
+    - outputs/*imagenet*/baselines/*
+    - outputs/*in100*/baselines/*
+    - experiment_output/**/*baseline*
+    - "**/fp/all_runs.csv"
+    - "**/nc/all_runs.csv"
+    - "**/npd/all_runs.csv"
+    - "**/selected_config.json"
+    - "**/final_fixedbank.csv"
+  found_relevant_baseline_code:
+    - cifar_baseline_parity.py
+    - baseline_parity_common.py
+    - configs/baselines/cifar10_rn18_baseline_parity_v3.yaml
+  found_imagenet_baseline_configs: MISSING
+  found_imagenet_baseline_results: MISSING
+  note: "The discovered baseline parity orchestrator/configs are CIFAR-10 ResNet-18 specific, not ImageNet-100 ResNet-50."
+
+methods:
+  FP:
+    final_selected_result:
+      clean_acc_pct: MISSING
+      w_asr_teval_pct: MISSING
+      w_asr_tholdout_pct: MISSING
+      selected_checkpoint_path: MISSING
+      checkpoint_hash: MISSING
+    selection_evidence:
+      full_hyperparameter_grid_tried: MISSING
+      selected_hyperparameters: MISSING
+      w_asr_tprobe_selected_config_pct: MISSING
+      clean_acc_selection_repair_split_pct: MISSING
+      selection_rule_actually_used: MISSING
+      confirm_selection_used_tprobe_only_not_teval_tholdout: MISSING
+    protocol_details: &common_method_protocol
+      clean_repair_constraint_set_size: MISSING
+      clean_reporting_set_size: 5000
+      non_target_asr_evaluation_set_size_per_variant: 4950
+      target_label: 0
+      watermark_trigger_family_parameters: "ImageNet-100 BadNets 5x5 white square patch, image 224x224, incident pos [219, 219], non-target denominator"
+      tprobe_size: 8
+      teval_size: 16
+      tholdout_size: 16
+      trigger_bank_manifest_paths:
+        protocol_manifest: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/protocol_manifest.json
+        files_manifest: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/files_manifest.json
+        tprobe: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/tprobe.json
+        teval: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/teval.json
+        tholdout: experiment_output/paper_in100_rn50/imagenet100_rn50_badnets_protocol_sz5/banks_imagenet100_badnets/tholdout.json
+    no_leakage_checks: &missing_no_leakage_checks
+      confirm_teval_not_used_for_tuning_early_stopping_selection: MISSING
+      confirm_tholdout_not_used_for_tuning_early_stopping_selection: MISSING
+      confirm_tinit_texpanded_not_used_by_baselines: MISSING
+      confirm_final_selected_checkpoint_evaluated_once_on_teval_tholdout: MISSING
+      available_protocol_rule_excludes_teval_tholdout_from_optimization: true
+    reproducibility: &missing_repro
+      script_names_used: MISSING
+      config_paths: MISSING
+      result_log_paths: MISSING
+      seeds: MISSING
+      gpu_runtime_if_logged: MISSING
+  NC:
+    final_selected_result:
+      clean_acc_pct: MISSING
+      w_asr_teval_pct: MISSING
+      w_asr_tholdout_pct: MISSING
+      selected_checkpoint_path: MISSING
+      checkpoint_hash: MISSING
+    selection_evidence:
+      full_hyperparameter_grid_tried: MISSING
+      selected_hyperparameters: MISSING
+      w_asr_tprobe_selected_config_pct: MISSING
+      clean_acc_selection_repair_split_pct: MISSING
+      selection_rule_actually_used: MISSING
+      confirm_selection_used_tprobe_only_not_teval_tholdout: MISSING
+    protocol_details: *common_method_protocol
+    no_leakage_checks: *missing_no_leakage_checks
+    reproducibility: *missing_repro
+  NPD:
+    final_selected_result:
+      clean_acc_pct: MISSING
+      w_asr_teval_pct: MISSING
+      w_asr_tholdout_pct: MISSING
+      selected_checkpoint_path: MISSING
+      checkpoint_hash: MISSING
+    selection_evidence:
+      full_hyperparameter_grid_tried: MISSING
+      selected_hyperparameters: MISSING
+      w_asr_tprobe_selected_config_pct: MISSING
+      clean_acc_selection_repair_split_pct: MISSING
+      selection_rule_actually_used: MISSING
+      confirm_selection_used_tprobe_only_not_teval_tholdout: MISSING
+    protocol_details: *common_method_protocol
+    no_leakage_checks: *missing_no_leakage_checks
+    reproducibility: *missing_repro

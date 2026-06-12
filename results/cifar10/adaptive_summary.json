@@ -1,0 +1,61 @@
+{
+  "benchmark": "cifar10_resnet18",
+  "model": "ResNet-18",
+  "dataset": "CIFAR-10",
+  "checkpoint_path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29\\models\\backdoored.pth",
+  "final_patch_path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29\\rl_patching_revised\\post_av_rerun_anti08\\post_av\\seed_1\\post_av_gates_final.json",
+  "final_patch_hash": "d750de8221f0f2768de20ed298a09f5b0d91ee018ecb21d6c15bd7b954e12630",
+  "trigger_family_S": "BadNets 3x3 RGB patch; fixed pattern/size/opacity; top-left location varies",
+  "target_label": 0,
+  "adaptive_search_mode": "exhaustive_location_if_feasible",
+  "adaptive_rounds": 3,
+  "num_restarts_per_round": 5,
+  "num_inversion_steps": 500,
+  "num_adaptive_candidates_tested": 823,
+  "num_adaptive_unique_valid": 823,
+  "num_adaptive_bank_size": 16,
+  "W_ASR_adapt_percent": 2.8444444444444446,
+  "clean_accuracy_percent": 90.25,
+  "eval_num_clean_samples": 10000,
+  "eval_num_non_target_samples": 9000,
+  "no_patch_reselection": true,
+  "no_repair_rerun": true,
+  "used_Teval_for_search": false,
+  "used_Tholdout_for_search": false,
+  "timestamp": "2026-05-29T11:16:47.807295+00:00",
+  "patch_application": {
+    "applied_gate_modules": 6,
+    "applied_residual_alphas": 2,
+    "skipped_gate_indices": 0
+  },
+  "collision_rejection_sources": [
+    {
+      "bank": "tprobe",
+      "count": 8
+    },
+    {
+      "bank": "topt_init",
+      "count": 16
+    },
+    {
+      "bank": "teval",
+      "count": 16
+    },
+    {
+      "bank": "tholdout",
+      "count": 16
+    },
+    {
+      "bank": "texpanded",
+      "count": 21,
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29\\auto_vaccination_revised_rerun_anti08\\expanded_bank.json"
+    }
+  ],
+  "candidate_rejection_counts": {
+    "duplicate_existing_bank": 77,
+    "duplicate_tadapt": 0,
+    "invalid_trigger_params": 0,
+    "outside_S": 0,
+    "nan_or_failed_optimization": 0
+  }
+}

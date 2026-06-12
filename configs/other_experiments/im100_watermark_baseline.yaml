@@ -1,0 +1,69 @@
+benchmark: imagenet100_rn50
+seed: 1
+target_label: 0
+asr_denominator: non_target
+num_classes: 100
+
+data_root: ./data/imagenet100
+trigger_size: 32
+trigger_alpha: 0.5
+trigger_color: [1.0, 1.0, 1.0]
+randomize_trigger_pos_train: true
+
+backdoored_checkpoint: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_seed1_pr0p1_t0_p32_a0p5_inc192_192/models/backdoored_final.pth
+clean_checkpoint: null
+
+bank_root: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_protocol/banks_im100_wm32
+tprobe_path: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_protocol/banks_im100_wm32/tprobe.json
+teval_path: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_protocol/banks_im100_wm32/teval.json
+tholdout_path: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_protocol/banks_im100_wm32/tholdout.json
+
+expected_bank_sizes:
+  tprobe: 8
+  teval: 16
+  tholdout: 16
+
+clean_eval_split: val
+batch_size_eval: 64
+num_workers: 0
+output_root: outputs/im100_rn50_wm32/baselines
+
+fp:
+  prune_scope: ["last_block", "layer4", "layer3_layer4"]
+  prune_ratio: [0.05, 0.10, 0.15, 0.20, 0.30, 0.40]
+  fine_tune_epochs: [3, 5, 10]
+  lr: [0.0001, 0.0003, 0.001]
+  optimizer: AdamW
+  weight_decay: [0.0, 0.0001]
+  batch_size: 64
+  scheduler: cosine
+
+nc:
+  candidate_targets: [0]
+  image_size: 224
+  channels: 3
+  inversion_steps: [1000, 2000, 4000]
+  inversion_lr: [0.1, 0.3, 0.8]
+  mask_reg: [0.0001, 0.001, 0.01]
+  inversion_batch_size: 64
+  restarts_per_config: 3
+  restart_seeds: [1, 2, 3]
+  mitigation_epochs: [3, 5, 10]
+  mitigation_lr: [0.0001, 0.0003, 0.001]
+  mitigation_weight_decay: [0.0, 0.0001]
+  mitigation_batch_size: 64
+  optimizer: AdamW
+
+npd:
+  insert_layers: ["layer4", "layer3_layer4"]
+  train_scope: ["polarizer_only", "last_stage_unfreeze"]
+  epochs: [5, 10, 15]
+  lr: [0.00001, 0.00005, 0.0001]
+  optimizer: AdamW
+  weight_decay: [0.0, 0.0001]
+  lambda_pol: [0.5, 0.8, 1.0]
+  lambda_sup: [0.1, 0.5, 1.0]
+  lambda_distill: [0.0, 0.1, 0.5]
+  tau: 4.0
+  margin: [0.5, 1.0]
+  batch_size: 64

@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "protocol_version": "cifar10_badnets_fixed_protocol_v1_frozen",
+    "bank_name": "topt_init",
+    "bank_role": "fixed initial optimization bank (seeded from protocol, used only for optimization)",
+    "bank_seed": 1337,
+    "trigger_family": "cifar10_badnets_square_patch",
+    "trigger_size": 3,
+    "trigger_color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "image_size": [
+      32,
+      32
+    ],
+    "n_variants": 16,
+    "quadrant_counts": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "incident_pos_excluded": [
+      29,
+      29
+    ],
+    "sampling": "uniform within quadrant bins; stratified by 4 quadrants",
+    "min_center_distance": 0.0,
+    "disjointness": "enforced_by_position + sha256_params + sha256_mask"
+  },
+  "variants": [
+    {
+      "variant_id": "u3_v7",
+      "u": 3,
+      "v": 7,
+      "center_x": 4.5,
+      "center_y": 8.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "60b940c3d4d7b1bc112f915d05113e3af5deac6a6b0fbbaf8f544bf148a234eb",
+      "sha256_mask": "82873223bcc778f6a088a0ef6e4979019f6096128658b92401af6b1d81e330a4"
+    },
+    {
+      "variant_id": "u0_v12",
+      "u": 0,
+      "v": 12,
+      "center_x": 1.5,
+      "center_y": 13.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "3a3b4c4dd412768af4256e9a19763c5fbeece6edf79a3b73a3194d81bb29ab5a",
+      "sha256_mask": "1b0a75d4d176aa9ba6d84647fc6bf20154776bcb1aa1b482c8adaf78a5c1c7a2"
+    },
+    {
+      "variant_id": "u4_v11",
+      "u": 4,
+      "v": 11,
+      "center_x": 5.5,
+      "center_y": 12.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "822b7caa427df987cac10ec52a98bf076af84bb6207500b4a9e05d6a4228cd4b",
+      "sha256_mask": "a5a27ec859065eb7c2b00409bc89ef9dde1a302852c48374a344c79c44893b94"
+    },
+    {
+      "variant_id": "u7_v14",
+      "u": 7,
+      "v": 14,
+      "center_x": 8.5,
+      "center_y": 15.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "bf441d815f02386a761a760a635bf284108c76d0df021162611c820ca5380b03",
+      "sha256_mask": "9c6f5a38fca54860ebd46158e930c87a312bc7ec2e481cd72a721410c1307745"
+    },
+    {
+      "variant_id": "u27_v5",
+      "u": 27,
+      "v": 5,
+      "center_x": 28.5,
+      "center_y": 6.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "1a176a16646c753b7090ee4d723e0cc2bfdd0f1ec96ffaadc2a02b2c36e0186c",
+      "sha256_mask": "6e02fce2603695dbd6031927a30c9b930a7fa3f63dce67e0103ac1ed225d7b9e"
+    },
+    {
+      "variant_id": "u18_v3",
+      "u": 18,
+      "v": 3,
+      "center_x": 19.5,
+      "center_y": 4.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "917672f0794efe232caddc46e4f4ddc88bcd11dda48193eb9f7b55588725979b",
+      "sha256_mask": "73a03fdfa5265c9858221452ea26b5d9c9416c6de5ee7fd5ee56ccd2b7d34ce1"
+    },
+    {
+      "variant_id": "u15_v2",
+      "u": 15,
+      "v": 2,
+      "center_x": 16.5,
+      "center_y": 3.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "c7494bb4cd902503f135a10bf6cf5adbd81b59a559b3ecc5e5bb7349339ab991",
+      "sha256_mask": "775d67c58b5f9ff69a1c090d73d020b32a14da2d5304a285b605e3162b0168af"
+    },
+    {
+      "variant_id": "u27_v11",
+      "u": 27,
+      "v": 11,
+      "center_x": 28.5,
+      "center_y": 12.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "ea7ca8d8f09777ab81573a18affe431128ffb9ece981a98bb152827f0504f4b7",
+      "sha256_mask": "35547a89232b98ca4e3c0ef680a01d0f02e08d0a0c8e7c7959bc1c80276b69ee"
+    },
+    {
+      "variant_id": "u10_v16",
+      "u": 10,
+      "v": 16,
+      "center_x": 11.5,
+      "center_y": 17.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "80f23ed8d4a30ef4a49c9bc9f1fbf6e0fff6fee7c172e753e9a6cc60ff094443",
+      "sha256_mask": "5181d1175bdb4407cec837a9b50b3398a788042ef9bc31b58f9911ab0935e155"
+    },
+    {
+      "variant_id": "u13_v22",
+      "u": 13,
+      "v": 22,
+      "center_x": 14.5,
+      "center_y": 23.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "cedfcc802b0590a3f25c13493f2f626cf7f80d9182577bc6e7543e7a095c5aa4",
+      "sha256_mask": "6d64de8c1ff289ace93795745ac64eb4f5b7592d5977a8cda9e835ca7be60624"
+    },
+    {
+      "variant_id": "u7_v26",
+      "u": 7,
+      "v": 26,
+      "center_x": 8.5,
+      "center_y": 27.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "349fb8a9411b0857a5d8acff99b63cc6099034858ff9bb7a87de72d5008f8ee9",
+      "sha256_mask": "8eb432d6a197ec4634a94aae0973f948adc7fe9c6efe59646820c72680bb0b17"
+    },
+    {
+      "variant_id": "u11_v23",
+      "u": 11,
+      "v": 23,
+      "center_x": 12.5,
+      "center_y": 24.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "0ec6ef78f705682ee3657300fc30ef6a45995d73134225ab9983785778b4812f",
+      "sha256_mask": "b34faed00895cb504e0a4e72e9a9bedb37a8081c320de8f00dc48e9d6a21f44a"
+    },
+    {
+      "variant_id": "u16_v23",
+      "u": 16,
+      "v": 23,
+      "center_x": 17.5,
+      "center_y": 24.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "da378699e64b4e94f18be6f9509f1305962ded853a2e2e8b9dc1a77bce84aa48",
+      "sha256_mask": "cc088b3e76bed3802091fd542205e18d3be9a08180d88384034cebb6c97265c6"
+    },
+    {
+      "variant_id": "u24_v19",
+      "u": 24,
+      "v": 19,
+      "center_x": 25.5,
+      "center_y": 20.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "67b74247c35cd408cb210cef0f1ee4fc6c4d238d34e6d24074e3d2992ca49db5",
+      "sha256_mask": "6c07c14626cfff95284d4f9980a8433e2dedd85802980cc2e2593918d8b4aabc"
+    },
+    {
+      "variant_id": "u28_v19",
+      "u": 28,
+      "v": 19,
+      "center_x": 29.5,
+      "center_y": 20.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "fb5a5cff57707657508c2a1752452dead47a01eea4a1f937d004aafc7898c683",
+      "sha256_mask": "79eb3dc9c12619918312b2306a659a0032e61e9283bf9555b8c8006d1a2b34a1"
+    },
+    {
+      "variant_id": "u18_v17",
+      "u": 18,
+      "v": 17,
+      "center_x": 19.5,
+      "center_y": 18.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "4a41f19fed3c57e5a061444954d4721730c4160d3eeda8dae196d1d87b12f2ac",
+      "sha256_mask": "034e5fdb7ac63a27f23c4985711e90f333b073450765cf3333032bf61db9f68e"
+    }
+  ]
+}

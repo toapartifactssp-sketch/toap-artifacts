@@ -1,0 +1,23 @@
+[
+  {
+    "name": "simple_s20_x136_y181",
+    "size": 20,
+    "x": 136,
+    "y": 181,
+    "trigger_family": "simple"
+  },
+  {
+    "name": "simple_s15_x146_y149",
+    "size": 15,
+    "x": 146,
+    "y": 149,
+    "trigger_family": "simple"
+  },
+  {
+    "name": "grad_s15_x178_y52",
+    "size": 15,
+    "x": 178,
+    "y": 52,
+    "trigger_family": "grad"
+  }
+]

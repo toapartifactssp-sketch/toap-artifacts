@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "protocol_version": "cifar10_badnets_fixed_protocol_v1_frozen",
+    "bank_name": "teval",
+    "bank_role": "fixed headline reporting bank",
+    "bank_seed": 1337,
+    "trigger_family": "cifar10_badnets_square_patch",
+    "trigger_size": 3,
+    "trigger_color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "image_size": [
+      32,
+      32
+    ],
+    "n_variants": 16,
+    "quadrant_counts": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "incident_pos_excluded": [
+      29,
+      29
+    ],
+    "sampling": "uniform within quadrant bins; stratified by 4 quadrants",
+    "min_center_distance": 0.0,
+    "disjointness": "enforced_by_position + sha256_params + sha256_mask"
+  },
+  "variants": [
+    {
+      "variant_id": "u10_v6",
+      "u": 10,
+      "v": 6,
+      "center_x": 11.5,
+      "center_y": 7.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "e8a005685ca6576b12e6cb07c5a6e277500bcd3b639e42d2787b3b2a64b1e211",
+      "sha256_mask": "aecd2f24f591dfec898f6400b21bdac993ef78a7ca2dd5ccc63f6dfd7db61866"
+    },
+    {
+      "variant_id": "u4_v6",
+      "u": 4,
+      "v": 6,
+      "center_x": 5.5,
+      "center_y": 7.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "c63c490a9dcaa5b36664327643801c8516d273452a2e80466a23ee0e0b9ae564",
+      "sha256_mask": "711e206b69a502a7f63afa6642c8f9cd457673bd9b97fd0d6b3e4826c8125fa7"
+    },
+    {
+      "variant_id": "u5_v11",
+      "u": 5,
+      "v": 11,
+      "center_x": 6.5,
+      "center_y": 12.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "b74e9b6144b8ace920dc5d6fc08eecfe5433bee659c0fb8a67b3cddfa91e5283",
+      "sha256_mask": "db5b8b2fe337b536be4253cc2b5f97589384ecfb3c61c14b26dcc52781d3f16e"
+    },
+    {
+      "variant_id": "u4_v12",
+      "u": 4,
+      "v": 12,
+      "center_x": 5.5,
+      "center_y": 13.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "d6647c746359b452dc3a53117752f820a265183ba54f7b7314873b089f01e53d",
+      "sha256_mask": "b5a061fc641aa9f21d3595aa4907e43f2904162cc658af94354a97607c5b49df"
+    },
+    {
+      "variant_id": "u20_v11",
+      "u": 20,
+      "v": 11,
+      "center_x": 21.5,
+      "center_y": 12.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "a43d0c65ee2c76ecf3fad2f91eb27ed312fc5a3edd04350dd39e355125b18a16",
+      "sha256_mask": "c9f5da320697523fa846a27247187c47b8728935c1bdde2fd69bafab351b72af"
+    },
+    {
+      "variant_id": "u18_v2",
+      "u": 18,
+      "v": 2,
+      "center_x": 19.5,
+      "center_y": 3.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "3c2cd6579a5a511cdd740f3c38bab05e5506a6ccd1f022058bf9a4fd3865119b",
+      "sha256_mask": "fa2ca2fad34366a700528fde3dcc833df43a584aa3032a147cfa8bd16b3c5011"
+    },
+    {
+      "variant_id": "u26_v1",
+      "u": 26,
+      "v": 1,
+      "center_x": 27.5,
+      "center_y": 2.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "92b5c679bd4aa6d80dd4b28993d07c54d531c82fbcadf120a9180d92597c4c54",
+      "sha256_mask": "1590239bcfa7421afeb07cd6be2fa9922fd83dc0a4f8a5d4de3b63316af284b1"
+    },
+    {
+      "variant_id": "u21_v4",
+      "u": 21,
+      "v": 4,
+      "center_x": 22.5,
+      "center_y": 5.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "8e76f3c256b57932b4121029022effeb1b69d8f737372c5a4b47190551eeb238",
+      "sha256_mask": "842829610c988f9d5ede9e9ce460cf09c991b995fd87d6f18fc068ad02de4bc3"
+    },
+    {
+      "variant_id": "u4_v29",
+      "u": 4,
+      "v": 29,
+      "center_x": 5.5,
+      "center_y": 30.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "a81925208fcec5486d952b01b3ffc787227c9d91bad1ae614bb360e7c27b15d4",
+      "sha256_mask": "9819d52e08bffe8aeb37e64ae08a984b8907f35172bb92d5218cb6a1a61a15f9"
+    },
+    {
+      "variant_id": "u9_v19",
+      "u": 9,
+      "v": 19,
+      "center_x": 10.5,
+      "center_y": 20.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "1797523bb41c937b9bef0aa0dc611fadbd03472e32f6f82ec55341d32ecfaef0",
+      "sha256_mask": "941e250a543fdcb8adf536f6171c2ef52cc9f1f3ad2a2a6c1bd7db40fa15c556"
+    },
+    {
+      "variant_id": "u4_v22",
+      "u": 4,
+      "v": 22,
+      "center_x": 5.5,
+      "center_y": 23.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "a2625c4a15525a938350a36adc0e131f7e3c025bbfb432a627353c7cf7d9c989",
+      "sha256_mask": "ad5558cdf38047cbfcc9ffac415c5c14a8da4f82aac38d0ce0597e7064a70c04"
+    },
+    {
+      "variant_id": "u14_v27",
+      "u": 14,
+      "v": 27,
+      "center_x": 15.5,
+      "center_y": 28.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "dc46417dc3c2fdb1f433a7055b4b87ba4c8cd5fca6dec94676b5a8aa22e326f2",
+      "sha256_mask": "2e2f48811444a3f7aa8c864c2afff7c65ea90d07ecc2db20f59610c4ef32f844"
+    },
+    {
+      "variant_id": "u18_v15",
+      "u": 18,
+      "v": 15,
+      "center_x": 19.5,
+      "center_y": 16.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "02a06219fb297c5f0ae6170ec5a37b6ff25f26b70ef3868660296c2bc20b50de",
+      "sha256_mask": "135e1b343f0ff83840ac33d10a4bd6c2279dd593a268276d2725d23f02728a46"
+    },
+    {
+      "variant_id": "u21_v15",
+      "u": 21,
+      "v": 15,
+      "center_x": 22.5,
+      "center_y": 16.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "f151c4e6b5e71c90fba04263c3cafd8f9813321bffafca81e65b0100e89de394",
+      "sha256_mask": "dd9118113337f65b9e7453efbcff9f132a79a0cb4748bb3130dfedf4e25b9cd6"
+    },
+    {
+      "variant_id": "u19_v26",
+      "u": 19,
+      "v": 26,
+      "center_x": 20.5,
+      "center_y": 27.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "64e1a616980a1deb51f164ef5c587c7a2658e06b064ae6c44dda001332f850fa",
+      "sha256_mask": "11404e74c9fcc064818bc0fc0f0bd085c98c8a278b0d99b30ab5abb74af0e226"
+    },
+    {
+      "variant_id": "u19_v24",
+      "u": 19,
+      "v": 24,
+      "center_x": 20.5,
+      "center_y": 25.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "14e8d75fdea137c84e3ec87cd6d0bbc06a432fd02f4b9820f496223016b0d934",
+      "sha256_mask": "0cca2abfd9e17e4cd40f74e69d6dba65b9e00e985be225dbe0b7f952a08b110d"
+    }
+  ]
+}

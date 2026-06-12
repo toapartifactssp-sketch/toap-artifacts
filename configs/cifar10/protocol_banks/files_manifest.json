@@ -1,0 +1,33 @@
+{
+  "protocol_version": "cifar10_badnets_fixed_protocol_v1_frozen",
+  "files": {
+    "tprobe": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\tprobe.json",
+      "sha256_file": "3ff69f3358124683c61eb7d6c19eb5aeb72ebd065f84d6ecb4c12af98113012f"
+    },
+    "teval": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\teval.json",
+      "sha256_file": "d6c84612e28dc82b0b8c33f0b9842e538094f8d23cf44fb496ab46a0786c620e"
+    },
+    "tholdout": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\tholdout.json",
+      "sha256_file": "df3e68567201d143c4e1a8e5671f44b0d46029ddb35144239c037808721235ad"
+    },
+    "topt_init": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\topt_init.json",
+      "sha256_file": "de22a058d9b183583300c87258665f5be8cfb79161da7190bf1cff6a5b4262fd"
+    },
+    "search_space_av": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\search_space_av.json",
+      "sha256_file": "308f2ceb8cb1091493e6417636cbf331fd96390ae96811781f3e83ce0c4d21ad"
+    },
+    "protocol_manifest": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\protocol_manifest.json",
+      "sha256_file": "3709564561853721f208e78e2877cb0cee61d1ead8da51a28ec3e846e7bcb535"
+    },
+    "master_universe": {
+      "path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets\\master_universe.json",
+      "sha256_file": "8cbc616afe1b29df11466bb0b478926ee22bbc8b3eb3e4fb559d6ec47a607bce"
+    }
+  }
+}

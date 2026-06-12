@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "protocol_version": "cifar10_badnets_fixed_protocol_v1_frozen",
+    "bank_name": "tprobe",
+    "bank_role": "fixed probe bank for TSS / virtual gating / probe-only diagnostics",
+    "bank_seed": 1337,
+    "trigger_family": "cifar10_badnets_square_patch",
+    "trigger_size": 3,
+    "trigger_color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "image_size": [
+      32,
+      32
+    ],
+    "n_variants": 8,
+    "quadrant_counts": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2
+    },
+    "incident_pos_excluded": [
+      29,
+      29
+    ],
+    "sampling": "uniform within quadrant bins; stratified by 4 quadrants",
+    "min_center_distance": 0.0,
+    "disjointness": "enforced_by_position + sha256_params + sha256_mask"
+  },
+  "variants": [
+    {
+      "variant_id": "u12_v9",
+      "u": 12,
+      "v": 9,
+      "center_x": 13.5,
+      "center_y": 10.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "910f268349056a94cddd87f38ae78af6f5762a90f18d95e0085b6db1e9e339a8",
+      "sha256_mask": "2e9ec1a9a32246fa07ce1b13b3ff05909c4ea1f0c1af0940fcd3803339187562"
+    },
+    {
+      "variant_id": "u6_v10",
+      "u": 6,
+      "v": 10,
+      "center_x": 7.5,
+      "center_y": 11.5,
+      "quadrant": 0,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "1083a1ffd02e4750f620f50cecdfd93a25527c9b19ecb86933284bdfaeb6f3e4",
+      "sha256_mask": "b1061abb4e51b0789d9ce63a2edc902692b6da35454b7380caa71593089a8bb5"
+    },
+    {
+      "variant_id": "u23_v10",
+      "u": 23,
+      "v": 10,
+      "center_x": 24.5,
+      "center_y": 11.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "ed460f47b1e964c1868013803185418c7ad103b95bc3194828486afaa1c3e191",
+      "sha256_mask": "11bab08722a72040cd39275bf415c7d9917f80a4736f788c300f0234082e3abb"
+    },
+    {
+      "variant_id": "u29_v7",
+      "u": 29,
+      "v": 7,
+      "center_x": 30.5,
+      "center_y": 8.5,
+      "quadrant": 1,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "6e0d38a1e93b398aae03ee87fc995effd1d63f483826bb6441a599f3f4d72fb9",
+      "sha256_mask": "c72ca2cb79fcda7c7f745993ac5a756c9f77b7f3d0508e55210d7510a739b81f"
+    },
+    {
+      "variant_id": "u3_v24",
+      "u": 3,
+      "v": 24,
+      "center_x": 4.5,
+      "center_y": 25.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "3b71aacff21389a28fb7e9ef2d81fda9ccf7e9f54eb72102bcbf9f157c70d325",
+      "sha256_mask": "ca566702a827e263e73fe2b5aa74f2c049a2e1ddca85244c2ea731e56e1a745c"
+    },
+    {
+      "variant_id": "u1_v18",
+      "u": 1,
+      "v": 18,
+      "center_x": 2.5,
+      "center_y": 19.5,
+      "quadrant": 2,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "e71c802624f855ac124f963e794f66b14cabda8f502c606e361b94ffbd49e980",
+      "sha256_mask": "16b5df7c7d15c166895c73e8d8dc83fee93c44114631c29123635813e9e8ccf0"
+    },
+    {
+      "variant_id": "u22_v16",
+      "u": 22,
+      "v": 16,
+      "center_x": 23.5,
+      "center_y": 17.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "3b65b6e27dc29e1d117013f017bca30b755713d7cdaf13f06663f22065dad182",
+      "sha256_mask": "973329ef9f2b8f8b870b0463092a6f40867ad96a34f4b6f0fbc3ea5c278f07c7"
+    },
+    {
+      "variant_id": "u18_v26",
+      "u": 18,
+      "v": 26,
+      "center_x": 19.5,
+      "center_y": 27.5,
+      "quadrant": 3,
+      "trigger_size": 3,
+      "trigger_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "image_size": [
+        32,
+        32
+      ],
+      "sha256_params": "5916453f0bc3ef3bae504d0a958aa76d3b2aa0fc7364aec15f53a269cb36cad2",
+      "sha256_mask": "d825d91109486e85d06ce2425d48952cd6db2d370c7833d4f555a20d1d127708"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+benchmark: imagenet100_resnet50
+seed: 1
+target_label: 0
+num_classes: 100
+patch_size: 32
+alpha: 0.5
+pattern_seed: 20250607
+d_min: 8
+k_adapt: 16
+
+data_root: ./data/imagenet100
+checkpoint_path: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_seed1_pr0p1_t0_p32_a0p5_inc192_192/models/backdoored_final.pth
+final_patch_path: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_seed1_pr0p1_t0_p32_a0p5_inc192_192/rl_patching_revised/post_av/seed_0/post_av_gates_final.json
+protocol_banks_dir: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_protocol/banks_im100_wm32
+expanded_bank_json: ./experiment_output/im100_wm32/imagenet100_rn50_wm32_seed1_pr0p1_t0_p32_a0p5_inc192_192/auto_vaccination_revised/expanded_bank.json
+output_dir: ./experiment_output/im100_wm32/tadapt_seed1
+
+batch_size: 64
+device: cuda
+
+adaptive_search:
+  split: val
+  num_clean_samples: 512
+  non_target_only: true
+  seed: 1
+  mode: exhaustive_stride4_location_scan

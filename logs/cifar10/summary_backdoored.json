@@ -1,0 +1,35 @@
+{
+  "model_type": "backdoored",
+  "device": "cuda",
+  "seed": 1,
+  "deterministic": true,
+  "best_by_clean_accuracy": {
+    "epoch": 111,
+    "train_loss": 0.05934163943752456,
+    "train_acc": 98.12,
+    "test_loss": 0.32591632461246056,
+    "clean_acc": 91.28,
+    "asr_all": 95.05,
+    "asr_non_target": 95.52222222222223
+  },
+  "final_epoch": {
+    "epoch": 120,
+    "clean_acc": 90.73,
+    "asr_all": 95.81,
+    "asr_non_target": 96.0
+  },
+  "latency_forward_only": {
+    "ms_per_image": 0.02805701171872954,
+    "ms_per_batch": 3.5912974999973812,
+    "images_per_sec": 35641.7144500263,
+    "batch_size": 128.0,
+    "num_warmup": 50.0,
+    "num_iters": 200.0
+  },
+  "latency_end_to_end": {
+    "ms_per_image": 0.03792429687536014,
+    "images_per_sec": 26368.32011115575,
+    "num_images": 6400.0
+  },
+  "metrics_csv": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29\\logs\\metrics_backdoored.csv"
+}

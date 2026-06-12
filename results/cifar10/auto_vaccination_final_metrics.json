@@ -1,0 +1,716 @@
+{
+  "clean": {
+    "clean_acc": 0.8887,
+    "clean_acc_pct": 88.87,
+    "N_clean": 10000
+  },
+  "banks": {
+    "optimization": {
+      "bank_name": "optimization",
+      "bank_hash": "c639cd4d4306a9abefcd970395117e46a09299ccbd513a9be73b42fddc1137f4",
+      "primary_denominator": "non_target",
+      "w_asr_all": 0.0766,
+      "w_asr_all_pct": 7.66,
+      "worst_variant_all": "texpanded_r1_searched_hard_u23_v17",
+      "w_asr_non_target": 0.0054444444444444445,
+      "w_asr_non_target_pct": 0.5444444444444444,
+      "worst_variant_non_target": "texpanded_r1_searched_hard_u23_v17",
+      "w_asr_primary": 0.0054444444444444445,
+      "w_asr_primary_pct": 0.5444444444444444,
+      "worst_variant_primary": "texpanded_r1_searched_hard_u23_v17",
+      "counts": {
+        "N_seed": 10000,
+        "N_seed_non_target": 9000,
+        "N_variant": 21,
+        "N_attempt": 210000,
+        "N_attempt_non_target": 189000
+      },
+      "per_variant": [
+        {
+          "variant_id": "texpanded_r0_incident_u29_v29",
+          "asr_all": 0.0493,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u29_v28",
+          "asr_all": 0.046,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u28_v29",
+          "asr_all": 0.0484,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u28_v27",
+          "asr_all": 0.0481,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u29_v27",
+          "asr_all": 0.0478,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u27_v29",
+          "asr_all": 0.0488,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u28_v28",
+          "asr_all": 0.0476,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u27_v28",
+          "asr_all": 0.0452,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r0_simple_jitter_u27_v27",
+          "asr_all": 0.0494,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u21_v18",
+          "asr_all": 0.0433,
+          "asr_non_target": 0.0012222222222222222,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u23_v17",
+          "asr_all": 0.0766,
+          "asr_non_target": 0.0054444444444444445,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u21_v17",
+          "asr_all": 0.0508,
+          "asr_non_target": 0.001888888888888889,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u13_v24",
+          "asr_all": 0.0569,
+          "asr_non_target": 0.003,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u21_v12",
+          "asr_all": 0.0355,
+          "asr_non_target": 0.0006666666666666666,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u23_v16",
+          "asr_all": 0.0743,
+          "asr_non_target": 0.004666666666666667,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u22_v17",
+          "asr_all": 0.0683,
+          "asr_non_target": 0.0035555555555555557,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u23_v18",
+          "asr_all": 0.0652,
+          "asr_non_target": 0.0025555555555555557,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u13_v25",
+          "asr_all": 0.0661,
+          "asr_non_target": 0.0032222222222222222,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u14_v25",
+          "asr_all": 0.0694,
+          "asr_non_target": 0.0038888888888888888,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u15_v25",
+          "asr_all": 0.0686,
+          "asr_non_target": 0.0034444444444444444,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "texpanded_r1_searched_hard_u15_v26",
+          "asr_all": 0.0644,
+          "asr_non_target": 0.0025555555555555557,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        }
+      ]
+    },
+    "teval": {
+      "bank_name": "teval",
+      "bank_hash": "21faa87a6e5528a50407a8cc2b68ce02de547baa2418a6bf553c81616e07e87b",
+      "primary_denominator": "non_target",
+      "w_asr_all": 0.062,
+      "w_asr_all_pct": 6.2,
+      "worst_variant_all": "u14_v27",
+      "w_asr_non_target": 0.0015555555555555555,
+      "w_asr_non_target_pct": 0.15555555555555556,
+      "worst_variant_non_target": "u14_v27",
+      "w_asr_primary": 0.0015555555555555555,
+      "w_asr_primary_pct": 0.15555555555555556,
+      "worst_variant_primary": "u14_v27",
+      "counts": {
+        "N_seed": 10000,
+        "N_seed_non_target": 9000,
+        "N_variant": 16,
+        "N_attempt": 160000,
+        "N_attempt_non_target": 144000
+      },
+      "per_variant": [
+        {
+          "variant_id": "u10_v6",
+          "asr_all": 0.0372,
+          "asr_non_target": 0.00044444444444444447,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u4_v6",
+          "asr_all": 0.047,
+          "asr_non_target": 0.0006666666666666666,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u5_v11",
+          "asr_all": 0.0278,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u4_v12",
+          "asr_all": 0.026,
+          "asr_non_target": 0.00022222222222222223,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u20_v11",
+          "asr_all": 0.0252,
+          "asr_non_target": 0.00022222222222222223,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u18_v2",
+          "asr_all": 0.0339,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u26_v1",
+          "asr_all": 0.043,
+          "asr_non_target": 0.00022222222222222223,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u21_v4",
+          "asr_all": 0.0403,
+          "asr_non_target": 0.00044444444444444447,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u4_v29",
+          "asr_all": 0.0611,
+          "asr_non_target": 0.0007777777777777777,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u9_v19",
+          "asr_all": 0.0145,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u4_v22",
+          "asr_all": 0.049,
+          "asr_non_target": 0.00044444444444444447,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u14_v27",
+          "asr_all": 0.062,
+          "asr_non_target": 0.0015555555555555555,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u18_v15",
+          "asr_all": 0.0267,
+          "asr_non_target": 0.00044444444444444447,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u21_v15",
+          "asr_all": 0.04,
+          "asr_non_target": 0.0007777777777777777,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u19_v26",
+          "asr_all": 0.0536,
+          "asr_non_target": 0.0012222222222222222,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u19_v24",
+          "asr_all": 0.0498,
+          "asr_non_target": 0.0011111111111111111,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        }
+      ]
+    },
+    "tholdout": {
+      "bank_name": "tholdout",
+      "bank_hash": "8b84ca60524196a8ccc369ab1e7517f545be2cb107d7b6957a988e77781bd95a",
+      "primary_denominator": "non_target",
+      "w_asr_all": 0.067,
+      "w_asr_all_pct": 6.7,
+      "worst_variant_all": "u25_v16",
+      "w_asr_non_target": 0.003111111111111111,
+      "w_asr_non_target_pct": 0.3111111111111111,
+      "worst_variant_non_target": "u25_v16",
+      "w_asr_primary": 0.003111111111111111,
+      "w_asr_primary_pct": 0.3111111111111111,
+      "worst_variant_primary": "u25_v16",
+      "counts": {
+        "N_seed": 10000,
+        "N_seed_non_target": 9000,
+        "N_variant": 16,
+        "N_attempt": 160000,
+        "N_attempt_non_target": 144000
+      },
+      "per_variant": [
+        {
+          "variant_id": "u7_v5",
+          "asr_all": 0.0462,
+          "asr_non_target": 0.0005555555555555556,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u10_v12",
+          "asr_all": 0.0106,
+          "asr_non_target": 0.0,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u2_v0",
+          "asr_all": 0.048,
+          "asr_non_target": 0.00022222222222222223,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u8_v2",
+          "asr_all": 0.0382,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u24_v13",
+          "asr_all": 0.0636,
+          "asr_non_target": 0.0025555555555555557,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u15_v5",
+          "asr_all": 0.0486,
+          "asr_non_target": 0.0008888888888888889,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u18_v6",
+          "asr_all": 0.0404,
+          "asr_non_target": 0.0006666666666666666,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u15_v11",
+          "asr_all": 0.0127,
+          "asr_non_target": 0.0,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u4_v19",
+          "asr_all": 0.0249,
+          "asr_non_target": 0.0,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u13_v17",
+          "asr_all": 0.0093,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u0_v22",
+          "asr_all": 0.0454,
+          "asr_non_target": 0.00022222222222222223,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u10_v27",
+          "asr_all": 0.0629,
+          "asr_non_target": 0.0014444444444444444,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u22_v24",
+          "asr_all": 0.0619,
+          "asr_non_target": 0.0017777777777777779,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u25_v16",
+          "asr_all": 0.067,
+          "asr_non_target": 0.003111111111111111,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u26_v24",
+          "asr_all": 0.0582,
+          "asr_non_target": 0.0008888888888888889,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u19_v29",
+          "asr_all": 0.051,
+          "asr_non_target": 0.0005555555555555556,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        }
+      ]
+    },
+    "tprobe_diag": {
+      "bank_name": "tprobe",
+      "bank_hash": "286c6b0eb25b38236cd7d32a94552b419210a7f84335d882d9a31ada345d3b29",
+      "primary_denominator": "non_target",
+      "w_asr_all": 0.0636,
+      "w_asr_all_pct": 6.36,
+      "worst_variant_all": "u22_v16",
+      "w_asr_non_target": 0.0025555555555555557,
+      "w_asr_non_target_pct": 0.2555555555555556,
+      "worst_variant_non_target": "u22_v16",
+      "w_asr_primary": 0.0025555555555555557,
+      "w_asr_primary_pct": 0.2555555555555556,
+      "worst_variant_primary": "u22_v16",
+      "counts": {
+        "N_seed": 10000,
+        "N_seed_non_target": 9000,
+        "N_variant": 8,
+        "N_attempt": 80000,
+        "N_attempt_non_target": 72000
+      },
+      "per_variant": [
+        {
+          "variant_id": "u12_v9",
+          "asr_all": 0.0264,
+          "asr_non_target": 0.00022222222222222223,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u6_v10",
+          "asr_all": 0.0252,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u23_v10",
+          "asr_all": 0.0474,
+          "asr_non_target": 0.001,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u29_v7",
+          "asr_all": 0.0431,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u3_v24",
+          "asr_all": 0.0533,
+          "asr_non_target": 0.0005555555555555556,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u1_v18",
+          "asr_all": 0.0253,
+          "asr_non_target": 0.00011111111111111112,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u22_v16",
+          "asr_all": 0.0636,
+          "asr_non_target": 0.0025555555555555557,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        },
+        {
+          "variant_id": "u18_v26",
+          "asr_all": 0.0632,
+          "asr_non_target": 0.0023333333333333335,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        }
+      ]
+    },
+    "incident": {
+      "bank_name": "incident",
+      "bank_hash": "b3633141b0303b3b5968981641a7202eaf7ce41f81fca523d68760b9892813a2",
+      "primary_denominator": "non_target",
+      "w_asr_all": 0.0493,
+      "w_asr_all_pct": 4.93,
+      "worst_variant_all": "incident_u29_v29",
+      "w_asr_non_target": 0.0003333333333333333,
+      "w_asr_non_target_pct": 0.03333333333333333,
+      "worst_variant_non_target": "incident_u29_v29",
+      "w_asr_primary": 0.0003333333333333333,
+      "w_asr_primary_pct": 0.03333333333333333,
+      "worst_variant_primary": "incident_u29_v29",
+      "counts": {
+        "N_seed": 10000,
+        "N_seed_non_target": 9000,
+        "N_variant": 1,
+        "N_attempt": 10000,
+        "N_attempt_non_target": 9000
+      },
+      "per_variant": [
+        {
+          "variant_id": "incident_u29_v29",
+          "asr_all": 0.0493,
+          "asr_non_target": 0.0003333333333333333,
+          "counts": {
+            "N_seed": 10000,
+            "N_seed_non_target": 9000
+          }
+        }
+      ]
+    }
+  },
+  "stage": "post_av",
+  "optimization_bank_name": "texpanded",
+  "optimization_bank_hash": "c639cd4d4306a9abefcd970395117e46a09299ccbd513a9be73b42fddc1137f4",
+  "optimization_bank_size": 21,
+  "optimization_bank_path": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29\\auto_vaccination_revised_rerun_anti08\\expanded_bank.json",
+  "texpanded_provenance": {
+    "total": 21,
+    "by_source": {
+      "incident": 1,
+      "simple_jitter": 8,
+      "searched_hard": 12
+    },
+    "by_round_added": {
+      "0": 9,
+      "1": 12
+    },
+    "by_source_round_rows": [
+      {
+        "source": "incident",
+        "round_added": 0,
+        "count": 1
+      },
+      {
+        "source": "simple_jitter",
+        "round_added": 0,
+        "count": 8
+      },
+      {
+        "source": "searched_hard",
+        "round_added": 1,
+        "count": 12
+      }
+    ]
+  }
+}

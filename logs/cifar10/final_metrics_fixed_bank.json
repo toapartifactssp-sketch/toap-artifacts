@@ -1,0 +1,358 @@
+{
+  "run_dir": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29",
+  "protocol_banks_dir": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_protocol\\banks_cifar10_badnets",
+  "incident_pos": [
+    29,
+    29
+  ],
+  "target_label": 0,
+  "poison_ratio": 0.1,
+  "seed": 1,
+  "clean_model_clean_acc": 90.65,
+  "backdoored_model_clean_acc": 90.73,
+  "incident_asr": 96.0,
+  "w_asr_teval": 99.4888888888889,
+  "teval_details": {
+    "bank": "teval",
+    "worst_asr": 99.4888888888889,
+    "worst_variant": "teval_9_u9_v19",
+    "per_variant": [
+      {
+        "variant_id": "teval_0_u10_v6",
+        "asr_all": 98.09,
+        "asr_non_target": 98.53333333333333,
+        "asr_used": 98.53333333333333,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_1_u4_v6",
+        "asr_all": 97.23,
+        "asr_non_target": 97.57777777777778,
+        "asr_used": 97.57777777777778,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_2_u5_v11",
+        "asr_all": 98.53,
+        "asr_non_target": 99.02222222222223,
+        "asr_used": 99.02222222222223,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_3_u4_v12",
+        "asr_all": 98.55,
+        "asr_non_target": 99.04444444444445,
+        "asr_used": 99.04444444444445,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_4_u20_v11",
+        "asr_all": 98.82,
+        "asr_non_target": 99.34444444444445,
+        "asr_used": 99.34444444444445,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_5_u18_v2",
+        "asr_all": 96.4,
+        "asr_non_target": 96.65555555555555,
+        "asr_used": 96.65555555555555,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_6_u26_v1",
+        "asr_all": 94.12,
+        "asr_non_target": 94.12222222222222,
+        "asr_used": 94.12222222222222,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_7_u21_v4",
+        "asr_all": 97.05,
+        "asr_non_target": 97.37777777777778,
+        "asr_used": 97.37777777777778,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_8_u4_v29",
+        "asr_all": 96.85,
+        "asr_non_target": 97.15555555555555,
+        "asr_used": 97.15555555555555,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_9_u9_v19",
+        "asr_all": 98.95,
+        "asr_non_target": 99.4888888888889,
+        "asr_used": 99.4888888888889,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_10_u4_v22",
+        "asr_all": 98.82,
+        "asr_non_target": 99.34444444444445,
+        "asr_used": 99.34444444444445,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_11_u14_v27",
+        "asr_all": 98.51,
+        "asr_non_target": 99.0,
+        "asr_used": 99.0,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_12_u18_v15",
+        "asr_all": 98.86,
+        "asr_non_target": 99.38888888888889,
+        "asr_used": 99.38888888888889,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_13_u21_v15",
+        "asr_all": 98.78,
+        "asr_non_target": 99.3,
+        "asr_used": 99.3,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_14_u19_v26",
+        "asr_all": 98.69,
+        "asr_non_target": 99.2,
+        "asr_used": 99.2,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "teval_15_u19_v24",
+        "asr_all": 98.9,
+        "asr_non_target": 99.43333333333334,
+        "asr_used": 99.43333333333334,
+        "count_all": 10000,
+        "count_non_target": 9000
+      }
+    ]
+  },
+  "w_asr_tholdout": 99.67777777777778,
+  "tholdout_details": {
+    "bank": "tholdout",
+    "worst_asr": 99.67777777777778,
+    "worst_variant": "thold_9_u13_v17",
+    "per_variant": [
+      {
+        "variant_id": "thold_0_u7_v5",
+        "asr_all": 97.21,
+        "asr_non_target": 97.55555555555556,
+        "asr_used": 97.55555555555556,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_1_u10_v12",
+        "asr_all": 99.0,
+        "asr_non_target": 99.54444444444445,
+        "asr_used": 99.54444444444445,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_2_u2_v0",
+        "asr_all": 93.21,
+        "asr_non_target": 93.11111111111111,
+        "asr_used": 93.11111111111111,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_3_u8_v2",
+        "asr_all": 96.03,
+        "asr_non_target": 96.24444444444444,
+        "asr_used": 96.24444444444444,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_4_u24_v13",
+        "asr_all": 98.65,
+        "asr_non_target": 99.15555555555555,
+        "asr_used": 99.15555555555555,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_5_u15_v5",
+        "asr_all": 98.02,
+        "asr_non_target": 98.45555555555555,
+        "asr_used": 98.45555555555555,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_6_u18_v6",
+        "asr_all": 98.18,
+        "asr_non_target": 98.63333333333334,
+        "asr_used": 98.63333333333334,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_7_u15_v11",
+        "asr_all": 98.93,
+        "asr_non_target": 99.46666666666667,
+        "asr_used": 99.46666666666667,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_8_u4_v19",
+        "asr_all": 98.82,
+        "asr_non_target": 99.34444444444445,
+        "asr_used": 99.34444444444445,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_9_u13_v17",
+        "asr_all": 99.12,
+        "asr_non_target": 99.67777777777778,
+        "asr_used": 99.67777777777778,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_10_u0_v22",
+        "asr_all": 97.6,
+        "asr_non_target": 97.9888888888889,
+        "asr_used": 97.9888888888889,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_11_u10_v27",
+        "asr_all": 98.4,
+        "asr_non_target": 98.87777777777778,
+        "asr_used": 98.87777777777778,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_12_u22_v24",
+        "asr_all": 98.79,
+        "asr_non_target": 99.31111111111112,
+        "asr_used": 99.31111111111112,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_13_u25_v16",
+        "asr_all": 98.82,
+        "asr_non_target": 99.34444444444445,
+        "asr_used": 99.34444444444445,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_14_u26_v24",
+        "asr_all": 98.24,
+        "asr_non_target": 98.7,
+        "asr_used": 98.7,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "thold_15_u19_v29",
+        "asr_all": 97.35,
+        "asr_non_target": 97.71111111111111,
+        "asr_used": 97.71111111111111,
+        "count_all": 10000,
+        "count_non_target": 9000
+      }
+    ]
+  },
+  "w_asr_tprobe_diag_only": 99.44444444444444,
+  "tprobe_details_diag_only": {
+    "bank": "tprobe",
+    "worst_asr": 99.44444444444444,
+    "worst_variant": "tprobe_6_u22_v16",
+    "per_variant": [
+      {
+        "variant_id": "tprobe_0_u12_v9",
+        "asr_all": 98.76,
+        "asr_non_target": 99.27777777777777,
+        "asr_used": 99.27777777777777,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_1_u6_v10",
+        "asr_all": 98.4,
+        "asr_non_target": 98.87777777777778,
+        "asr_used": 98.87777777777778,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_2_u23_v10",
+        "asr_all": 98.42,
+        "asr_non_target": 98.9,
+        "asr_used": 98.9,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_3_u29_v7",
+        "asr_all": 95.84,
+        "asr_non_target": 96.03333333333333,
+        "asr_used": 96.03333333333333,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_4_u3_v24",
+        "asr_all": 98.54,
+        "asr_non_target": 99.03333333333333,
+        "asr_used": 99.03333333333333,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_5_u1_v18",
+        "asr_all": 98.26,
+        "asr_non_target": 98.72222222222223,
+        "asr_used": 98.72222222222223,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_6_u22_v16",
+        "asr_all": 98.91,
+        "asr_non_target": 99.44444444444444,
+        "asr_used": 99.44444444444444,
+        "count_all": 10000,
+        "count_non_target": 9000
+      },
+      {
+        "variant_id": "tprobe_7_u18_v26",
+        "asr_all": 98.72,
+        "asr_non_target": 99.23333333333333,
+        "asr_used": 99.23333333333333,
+        "count_all": 10000,
+        "count_non_target": 9000
+      }
+    ]
+  }
+}

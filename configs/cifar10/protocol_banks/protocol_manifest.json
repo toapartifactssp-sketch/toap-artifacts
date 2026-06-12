@@ -1,0 +1,29 @@
+{
+  "protocol_version": "cifar10_badnets_fixed_protocol_v1_frozen",
+  "dataset": "CIFAR-10",
+  "model_family": "ResNet-18",
+  "attack_family": "BadNets",
+  "trigger_family": "cifar10_badnets_square_patch",
+  "frozen_counts": {
+    "tprobe": 8,
+    "teval": 16,
+    "tholdout": 16,
+    "topt_init": 16
+  },
+  "min_center_distance_tholdout_requested": 6.0,
+  "min_center_distance_tholdout_used": 3.0,
+  "incident_trigger": {
+    "u": 29,
+    "v": 29
+  },
+  "bank_seed": 1337,
+  "reuse_policy": "same bank_seed and same protocol_dir must be reused across all model seeds / runs",
+  "non_negotiable_rule": "No trigger from Teval or Tholdout may be used in optimization, RL reward, tuning, early stopping, or auto-vaccination. Tprobe is probe-only. Headline metrics must be reported on fixed Teval and fixed Tholdout.",
+  "sampling_policy": {
+    "tprobe": "quadrant-stratified uniform within bins",
+    "teval": "quadrant-stratified uniform within bins",
+    "topt_init": "quadrant-stratified uniform within bins",
+    "tholdout": "quadrant-stratified uniform within bins + min center-distance from incident/Tprobe/Teval/T_init + internal spacing",
+    "search_space_av": "all remaining valid positions after reserving fixed banks"
+  }
+}

@@ -1,0 +1,78 @@
+# Small grid for sanity-check (~minutes per method). Copy paths from full v3 config.
+benchmark: imagenet100_rn50
+seed: 1
+target_label: 0
+asr_denominator: non_target
+num_classes: 100
+
+data_root: ./data/imagenet100
+trigger_size: 12
+trigger_color: [1.0, 1.0, 1.0]
+randomize_trigger_pos_train: false
+
+backdoored_checkpoint: ./experiment_output/paper_in100_rn50_v2/imagenet100_rn50_badnets_v2_seed1_pr0p1_t0_sz12_c1p0_1p0_1p0_inc212_212/models/backdoored_final.pth
+
+bank_root: ./experiment_output/paper_in100_rn50_v2/imagenet100_rn50_badnets_v2_protocol/banks_imagenet100_badnets
+tprobe_path: ./experiment_output/paper_in100_rn50_v2/imagenet100_rn50_badnets_v2_protocol/banks_imagenet100_badnets/tprobe.json
+teval_path: ./experiment_output/paper_in100_rn50_v2/imagenet100_rn50_badnets_v2_protocol/banks_imagenet100_badnets/teval.json
+tholdout_path: ./experiment_output/paper_in100_rn50_v2/imagenet100_rn50_badnets_v2_protocol/banks_imagenet100_badnets/tholdout.json
+
+expected_bank_sizes:
+  tprobe: 8
+  teval: 16
+  tholdout: 16
+
+clean_eval_split: val
+clean_train_or_constraint_split: train
+clean_eval_size: 4999
+clean_repair_size: 130000
+probe_n: 0
+batch_size_eval: 64
+num_workers: 0
+output_root: outputs/imagenet100_rn50/baselines_smoke
+
+fp:
+  prune_scope: ["layer4"]
+  prune_ratio: [0.10]
+  fine_tune_epochs: [3]
+  lr: [0.0003]
+  optimizer: AdamW
+  weight_decay: [0.0]
+  batch_size: 64
+  scheduler: cosine
+
+nc:
+  candidate_targets: [0]
+  image_size: 224
+  channels: 3
+  inversion_steps: [500]
+  inversion_lr: [0.3]
+  mask_reg: [0.001]
+  inversion_batch_size: 64
+  restarts_per_config: 1
+  restart_seeds: [1]
+  mitigation_epochs: [3]
+  mitigation_lr: [0.0003]
+  mitigation_weight_decay: [0.0]
+  mitigation_batch_size: 64
+  optimizer: AdamW
+
+npd:
+  insert_layers: ["layer4"]
+  train_scope: ["polarizer_only"]
+  epochs: [5]
+  lr: [0.00005]
+  optimizer: AdamW
+  weight_decay: [0.0]
+  lambda_pol: [0.8]
+  lambda_sup: [0.5]
+  lambda_distill: [0.0]
+  tau: 4.0
+  margin: [1.0]
+  batch_size: 64
+
+locked_rows:
+  none:
+    clean_acc_pct: 88.68
+    w_asr_teval_pct: 99.90
+    w_asr_tholdout_pct: 99.90

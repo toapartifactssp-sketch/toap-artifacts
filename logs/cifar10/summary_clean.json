@@ -1,0 +1,35 @@
+{
+  "model_type": "clean",
+  "device": "cuda",
+  "seed": 1,
+  "deterministic": true,
+  "best_by_clean_accuracy": {
+    "epoch": 103,
+    "train_loss": 0.05758912540505381,
+    "train_acc": 98.038,
+    "test_loss": 0.31651249669397935,
+    "clean_acc": 91.64,
+    "asr_all": null,
+    "asr_non_target": null
+  },
+  "final_epoch": {
+    "epoch": 120,
+    "clean_acc": 90.65,
+    "asr_all": 0.0,
+    "asr_non_target": 0.0
+  },
+  "latency_forward_only": {
+    "ms_per_image": 0.028158609374990817,
+    "ms_per_batch": 3.6043019999988246,
+    "images_per_sec": 35513.1173802977,
+    "batch_size": 128.0,
+    "num_warmup": 50.0,
+    "num_iters": 200.0
+  },
+  "latency_end_to_end": {
+    "ms_per_image": 0.038397328124233354,
+    "images_per_sec": 26043.47877447439,
+    "num_images": 6400.0
+  },
+  "metrics_csv": "experiment_output\\paper_fixedbank_v3\\cifar10_rn18_badnets_randpos_seed1_pr0p1_t0_sz3_c1p0_1p0_1p0_inc29_29\\logs\\metrics_clean.csv"
+}

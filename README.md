@@ -5,7 +5,7 @@ implementation, configuration, and a fully reproducible pipeline for the
 **CIFAR-10 / ResNet-18 (BadNets)** experiments, plus implementation code and
 configuration templates for the remaining experiments.
 
-> Scope summary: **CIFAR-10 is the fully reproducible part** of this artifact.
+> Scope summary: fully reproducible CIFAR-10\ResNet18 and
 > The ImageNet-100 and multimodal (BLIP-2 / LLaVA) experiments are provided as
 > implementation code, configuration templates.
 
